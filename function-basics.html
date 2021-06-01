@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Basic tests</title>
+</head>
+<body>
+    <script>
+        let add7 = (a) => a + 7;
+
+        let multiply = (a, b) => a * b;
+
+        // Capitalizing the first letter of a string.
+
+        function capFirstLtr() {
+            let saying = prompt('Please enter your sentence you would like for the first letter to be capitalized: ');
+
+            let sliceSaying = saying.slice(1);
+            let lowerCase = sliceSaying.toLowerCase();
+
+            let getFirstLtr = saying.substr(0, 1);
+            let upperCase = getFirstLtr.toUpperCase();
+
+            return upperCase.concat(lowerCase);
+        }
+
+        // Second Variation of Capitalizing the First Letter of a string.
+        // Took me a while to figure this one out, but I'm proud I did!
+
+        function capFirstLtr() {
+            let sentence = prompt('Please enter your sentence you would like for the first letter to be capitalized: ')
+            let firstLtrUp = upperCase(sentence).concat(lowerCase(sentence));
+            return firstLtrUp;
+        }
+
+        function upperCase(a) {
+            let getFirstLtr = a.substr(0, 1);
+            let upCased = getFirstLtr.toUpperCase();
+
+            return upCased;
+        }
+
+        function lowerCase(b) {
+            let sliceSaying = b.slice(1);
+            let lowerEntire = sliceSaying.toLowerCase();
+
+            return lowerEntire;
+        }
+
+        // Retriveing the last letter of a string.
+
+        function showLastLtr() {
+            let saying = prompt('Enter a sentence you would like the last letter of: ')
+            let lastLtr = grabLastLtr(saying);
+
+            return lastLtr;
+        }
+
+        function grabLastLtr(a) {
+            let getLast = a.substr(-1, 1);
+
+            return getLast;
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
